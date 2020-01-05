@@ -1,0 +1,108 @@
+.stage {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 30px;
+  width: 350px;
+  height: 530px;
+  box-shadow: 0 5px 5px rgb(165, 165, 165);
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 110, 134);
+  position: absolute;
+  top: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: 0 3px 3px rgb(163, 162, 163);
+}
+
+.menu-icon:hover {
+  background-color: rgb(255, 155, 172);
+  cursor: pointer;
+}
+
+.menu-icon div span {
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 5px;
+  display: grid;
+  margin-top: 3px;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 5px;
+}
+
+.menu-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 110, 134);
+  position: absolute;
+  top: 130px;
+  width: 310px;
+  height: 380px;
+  border-radius: 25px;
+}
+
+.menu-body::after {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(255, 110, 134);
+  content: "";
+}
+
+.menu-contents {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 290px;
+  height: 360px;
+  position: absolute;
+}
+
+.menu-contents a {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 20px;
+  transform: translateY(0%);
+  box-shadow: 0 5px 5px rgb(122, 53, 64);
+}
+
+.menu-contents a:hover {
+  transform: translateY(-10%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu-contents a img {
+  width: 70px;
+  height: 70px;
+}
